@@ -1,0 +1,13 @@
+.active{
+    color: rgb(255, 0, 170);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-radius: 45px;
+}
+.card {
+opacity: .4;
+cursor: pointer;
+}

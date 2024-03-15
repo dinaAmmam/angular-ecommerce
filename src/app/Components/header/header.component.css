@@ -1,0 +1,35 @@
+.nav-search{
+  height: 50px;
+  width: 50%;
+  border-radius:15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.select{
+  background-color: #d5d4d4;
+  text-align: center;
+  border: none;
+  border-top-left-radius:6px ;
+  border-bottom-left-radius:6px;
+}
+.search-input{
+  height: 50px;
+  width: 100%;
+  border: none;
+}
+
+.search-button{
+  height: 50px;
+  width: 60px;
+  background-color: #94f091;
+  font-size: 20px;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius:6px ;
+}
+.active-route
+{
+  font-size: large;
+  color: rgb(91, 1, 82);
+}

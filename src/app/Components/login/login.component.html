@@ -1,0 +1,23 @@
+<form (ngSubmit)="onSubmit(signinForm)" #signinForm="ngForm">
+  <div class="form-group">
+      <label for="inputEmail">Email</label>
+      <input type="text" class="form-control" placeholder="email" name="email" [(ngModel)]="user.email"
+          #email="ngModel" required minlength="3">
+  </div>
+  @if(email.errors?.['required'] && email.dirty && email.touched ){
+  <span class="invalid-msg">email is required</span>
+  }
+  @if(email.errors?.['minlength'] && email.dirty && email.touched ){
+  <span class="invalid-msg">Min length is 3</span>
+  }
+  <div class="form-group">
+      <label for="inputPassword">Password</label>
+      <input type="password" class="form-control" placeholder="Password" name="password" #password="ngModel"
+          [(ngModel)]="user.password" required>
+  </div>
+
+  @if(password.invalid && password.dirty && password.touched){
+  <span class="invalid-msg">Password is required</span>
+  }
+  <button type="submit" class="btn btn-secondary my-3" [disabled]="signinForm.invalid" (click)="redirectTohome()">Sign in</button>
+</form>

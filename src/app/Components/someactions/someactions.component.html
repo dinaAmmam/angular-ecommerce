@@ -1,0 +1,55 @@
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>Name</label>
+    <input formControlName="name" type="text" class="form-control" placeholder="Username" name="name">
+  </div>
+  @if(getIsError("name","required")){
+  <span class="text-danger">Name is required</span>
+  }
+  @if(productForm.controls['name'].dirty&&productForm.controls['name'].touched &&
+  productForm.controls['name'].errors?.['minlength']){
+  <span class="text-danger">Minumum 3 chars</span>
+  }
+  <div class="form-group">
+    <label>Price</label>
+    <input formControlName="price" type="number" class="form-control" placeholder="Price" name="price">
+  </div>
+
+  @if(getIsError("price","required")){
+  <span class="text-danger">Name is required</span>
+  }
+
+  <div class="form-group">
+    <label>imgURL</label>
+    <input formControlName="imgURL" type="text" class="form-control" placeholder="Image url" name="imgURL">
+  </div>
+  <select formControlName="categoryID" placeholder="categoryID" name="categoryID">
+    <option value=1>Chairs</option>
+    <option value=2>Tables</option>
+  </select>
+
+  <div class="form-group">
+    <label>description</label>
+    <input formControlName="description" type="text" class="form-control" placeholder="description" name="description">
+  </div>
+
+  <div class="form-group">
+    <label>Discount</label>
+    <input formControlName="discount" type="text" class="form-control" placeholder="discount" name="discount">
+  </div>
+
+  <div class="form-group">
+    <label>matrial</label>
+    <input formControlName="matrial" type="text" class="form-control" placeholder="matrial" name="matrial">
+  </div>
+  <div class="form-group">
+    <label>quantity</label>
+    <input formControlName="quantity" type="number" class="form-control" placeholder="description" name="quantity">
+  </div>
+  <button class="btn btn-primary my-3" [disabled]="productForm.invalid">Add product</button>
+</form>
+
+
+
+

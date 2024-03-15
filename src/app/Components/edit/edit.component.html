@@ -1,0 +1,49 @@
+<form *ngIf="productForm" [formGroup]="productForm">
+  <input [(ngModel)]="productbyId" (input)="onProductIdChange($event)" type="text" class="form-control" placeholder="Enter Product ID">
+  <button (click)="getProductById()" class="btn btn-secondary my-3" >Go To Edit</button>
+</form>
+
+<form *ngIf="product" [formGroup]="productForm" (ngSubmit)="updateProduct(product)">
+  <div class="form-group">
+    <label>Name</label>
+    <input formControlName="name" type="text" class="form-control" placeholder="Product Name">
+  </div>
+  <div *ngIf="getIsError('name', 'required')" class="text-danger">Name is required</div>
+  <div *ngIf="productForm.get('name') && productForm.get('name') && productForm.get('name')" class="text-danger">Minimum 3 chars</div>
+
+  <div class="form-group">
+    <label>Price</label>
+    <input formControlName="price" type="number" class="form-control" placeholder="Price" name="price">
+  </div>
+  <div *ngIf="getIsError('price', 'required')" class="text-danger">Price is required</div>
+
+  <div class="form-group">
+    <label>imgURL</label>
+    <input formControlName="imgURL" type="text" class="form-control" placeholder="Image url" name="imgURL">
+  </div>
+
+  <select formControlName="categoryID" placeholder="categoryID" name="categoryID">
+    <option value="1">Chairs</option>
+    <option value="2">Tables</option>
+  </select>
+
+  <div class="form-group">
+    <label>Description</label>
+    <input formControlName="description" type="text" class="form-control" placeholder="Description" name="description">
+  </div>
+
+  <div class="form-group">
+    <label>Discount</label>
+    <input formControlName="discount" type="text" class="form-control" placeholder="discount" name="discount">
+  </div>
+
+  <div class="form-group">
+    <label>Material</label>
+    <input formControlName="matrial" type="text" class="form-control" placeholder="Material" name="matrial">
+  </div>
+
+  <div class="form-group">
+    <label>Quantity</label>
+    <input formControlName="quantity" type="number" class="form-control" placeholder="Quantity" name="quantity">
+  </div>
+</form>

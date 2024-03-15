@@ -1,0 +1,45 @@
+<nav
+  class="navbar navbar-expand-lg"
+  style="background-color: rgba(215, 21, 166, 0.275)"
+>
+  <i class="fa-sharp fa-solid fa-spinner mx-2"></i>
+
+  <div class="collapse navbar-collapse mx-5" id="navbarNav">
+    @if(!user){ @for (route of firstroutes; track $index) {
+    <ul class="navbar-nav">
+      <li class="nav-item active ">
+        <a
+          class="nav-link"
+          [routerLink]="route.path"
+          title="{{ route.title }}"
+          routerLinkActive="active-route"
+          >{{ route.title }}
+        </a>
+      </li>
+    </ul>
+    } }@else { @for (route of routes; track $index) {
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a
+          class="nav-link"
+          [routerLink]="route.path"
+          routerLinkActive="active-route"
+          >{{ route.title }}</a
+        >
+      </li>
+    </ul>
+    }
+    <div class="active" style="margin-left: 580px">
+      <span style="font-weight: bold">Welcome:</span>
+      <u
+        style="color: rgb(145, 2, 131); font-size: large; cursor: pointer"
+        routerLink="/home"
+        >{{ user.email }}</u
+      >
+    </div>
+    <button class="btn btn-light mx-4" (click)="logout()" routerLink="/signup">
+      LogOut
+    </button>
+    }
+  </div>
+</nav>

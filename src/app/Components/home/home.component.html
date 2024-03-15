@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  @if(products.length==0){
+  <h3>No products matches you search critria</h3>
+  }
+  @for(parentProduct of products;track parentProduct.id){
+    <app-product [product]="parentProduct" (handleAddToCart)="addToCart($event)" (click)="handleBuy()"
+    [searchValue]="filterValue"></app-product>
+  }
+</div>

@@ -1,0 +1,6 @@
+.cards{
+opacity: .5;
+}
+.card{
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+<div class="text-center bg-light p-3 rounded p-20">
+  @if(!product){
+  <span>Wrong product id</span>
+  }@else {
+  <button class="btn btn-secondary m-5" routerLink="/home">Go back</button>
+  <div class="product-details">
+    <div>
+      <img [src]="product.imgURL" style="border-radius: 25px; width: 250px; height: 250px;">
+    </div>
+    <div class="product-details-col">
+      <p >{{product.name}}</p>
+      <p>{{product.price | currency}}</p>
+      <p>Number Of Product : {{product.quantity}}</p>
+      <p>{{product.description}}</p>
+      <p>Matrial of Product : {{product.matrial}}</p>
+    </div>
+  </div>
+  <button class="btn btn-secondary mx-5" (click)="goPrevious(product.id)">Back</button>
+  <button [disabled]="isLastIndex" class="btn btn-secondary" (click)="goNext(product.id)">Next</button>
+  }
+</div>

@@ -1,0 +1,157 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Rose Bouquet",
+      "price": 299,
+      "quantity": 4,
+      "imgURL": "https://i.pinimg.com/736x/da/db/58/dadb585f1c021994711c8c1d97592860.jpg",
+      "categoryID": 3,
+      "discount": 20,
+      "matrial": "Natural",
+      "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+    },
+    {
+      "id": "0",
+      "name": "White Bouquet",
+      "price": 500,
+      "quantity": 3,
+      "imgURL": "https://i.pinimg.com/564x/f6/40/cd/f640cd7cbbb96623b76e3c4e2416350f.jpg",
+      "categoryID": 3,
+      "discount": 50,
+      "matrial": "Natural",
+      "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+    },
+    {
+      "id": "3",
+      "name": "Purple Bouquet",
+      "price": 800,
+      "quantity": 5,
+      "imgURL": "https://i.pinimg.com/564x/4b/c5/db/4bc5db2fb7b69acb070516be9dedfa3d.jpg",
+      "categoryID": 3,
+      "discount": 20,
+      "matrial": "Natural",
+      "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+    },
+    {
+      "id": "4",
+      "name": "Purple Bouquet",
+      "price": 800,
+      "quantity": 2,
+      "imgURL": "https://i.pinimg.com/564x/80/32/52/803252dcca18d1021bd887b9ec15e35d.jpg",
+      "categoryID": 3,
+      "discount": 25,
+      "matrial": "Natural",
+      "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+    },
+    {
+      "id": "5",
+      "name": "Pink Bouquet",
+      "price": 800,
+      "quantity": 4,
+      "imgURL": "https://i.pinimg.com/564x/ea/70/64/ea70642397da96adfdeba51dfd8f57ae.jpg",
+      "categoryID": 3,
+      "discount": 30,
+      "matrial": "Natural",
+      "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+    },
+    {
+      "id": "6",
+      "name": "Purple Bouquet",
+      "price": 800,
+      "quantity": 12,
+      "imgURL": "https://i.pinimg.com/564x/02/e9/89/02e98991b7bf7537309dff513583191d.jpg",
+      "categoryID": 3,
+      "discount": 90,
+      "matrial": "Natural",
+      "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+    },
+    {
+        "id": "2",
+        "name": "Pink Bouquet",
+        "price": 800,
+        "quantity": 4,
+        "imgURL": "https://i.pinimg.com/564x/ea/70/64/ea70642397da96adfdeba51dfd8f57ae.jpg",
+        "categoryID": 3,
+        "discount": 30,
+        "matrial": "Natural",
+        "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+      },
+      {
+        "id": "7",
+        "name": "Purple Bouquet",
+        "price": 800,
+        "quantity": 12,
+        "imgURL": "https://i.pinimg.com/564x/02/e9/89/02e98991b7bf7537309dff513583191d.jpg",
+        "categoryID": 3,
+        "discount": 90,
+        "matrial": "Natural",
+        "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+      },
+      {
+        "id": "9",
+        "name": "Pink Bouquet",
+        "price": 800,
+        "quantity": 4,
+        "imgURL": "https://i.pinimg.com/564x/ea/70/64/ea70642397da96adfdeba51dfd8f57ae.jpg",
+        "categoryID": 3,
+        "discount": 30,
+        "matrial": "Natural",
+        "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+      },
+      {
+        "id": "8",
+        "name": "Purple Bouquet",
+        "price": 800,
+        "quantity": 12,
+        "imgURL": "https://i.pinimg.com/564x/02/e9/89/02e98991b7bf7537309dff513583191d.jpg",
+        "categoryID": 3,
+        "discount": 90,
+        "matrial": "Natural",
+        "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+      },
+      {
+        "id": "5",
+        "name": "Pink Bouquet",
+        "price": 800,
+        "quantity": 4,
+        "imgURL": "https://i.pinimg.com/564x/ea/70/64/ea70642397da96adfdeba51dfd8f57ae.jpg",
+        "categoryID": 3,
+        "discount": 30,
+        "matrial": "Natural",
+        "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+      },
+      {
+        "id": "11",
+        "name": "Purple Bouquet",
+        "price": 800,
+        "quantity": 12,
+        "imgURL": "https://i.pinimg.com/564x/02/e9/89/02e98991b7bf7537309dff513583191d.jpg",
+        "categoryID": 3,
+        "discount": 90,
+        "matrial": "Natural",
+        "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+      },
+    {
+      "id": "12",
+      "name": "Mini Bouquet",
+      "price": 800,
+      "quantity": 10,
+      "imgURL": "https://i.pinimg.com/564x/c7/d7/51/c7d751591f401ecd1465a1bd0674ff55.jpg",
+      "categoryID": 3,
+      "discount": 5,
+      "matrial": "Natural",
+      "description": "Embrace the delicate beauty and timeless elegance of pink flowers with our exquisite selection. ."
+    }
+  ],
+  "users": [
+    {
+      "email": "dina.ammam34@gmail.com",
+      "password": "123"
+    },
+    {
+      "email": "youssef@gmail.com",
+      "password": "123"
+    }
+  ]
+}
